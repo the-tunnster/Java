@@ -35,7 +35,17 @@ public class Flight {
 		System.out.print("From city : " + this.fromCity + ", ");
 		System.out.print("To city : " + this.toCity + ", ");
 		System.out.print("Number of stops : " + this.numberOfStops + ", ");
-		System.out.print("Stops : " + this.stops + ", ");
+
+		System.out.print("Stops : ");
+		if(this.numberOfStops==0){
+			System.out.print(this.stops + ", ");
+		}else{
+			
+			for(int i = 0; i< numberOfStops; i++){
+				System.out.print(stops[i] + ", ");
+			}
+		}
+		
 		System.out.print("Time : " + this.time + ", ");
 		System.out.println("Price : " + this.price + ".");
 	}
