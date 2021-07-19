@@ -1,6 +1,6 @@
 package CSVReader;
 
-public class Flight {
+public class Flight{
 
 	private int flightNumber;
 	private String fromCity;
