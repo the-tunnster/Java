@@ -1,0 +1,4 @@
+Flight-no,From ,To,stops,Via,time,price
+1,Pune ,Delhi,0,,120,6800
+2,Pune ,Delhi,1,Nagpur,200,5500
+3,Pune,Delhi,2,Nagpur Jaipur,280,3900
