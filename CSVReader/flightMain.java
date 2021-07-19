@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class flightMain {
+public class flightMain{
 
 	static ArrayList <Flight> FlightRecords = new ArrayList<>();
 	static String filePath = "/home/the_tunnster/Workspaces/Java Workspace/CSVReader/flights.csv";
