@@ -32,4 +32,5 @@ public class User {
 		System.out.println("City : " + this.city + ".");
 
 	}
+	
 }
