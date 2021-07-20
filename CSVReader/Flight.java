@@ -1,6 +1,6 @@
 package CSVReader;
 
-public class Flight{
+public class Flight extends CSVRecord{
 
 	private int flightNumber;
 	private String fromCity;
@@ -10,7 +10,10 @@ public class Flight{
 	private int time;
 	private int price;
 
+	private int numberOfFields = 7;
+
 	public Flight(){
+		super();
 		this.flightNumber = -1;
 		this.fromCity = "null";
 		this.toCity = "null";
@@ -21,6 +24,7 @@ public class Flight{
 	}
 
 	public Flight(int fN, String fC, String tC, int nOs, String []s, int t, int p){
+		super(7);
 		this.flightNumber = fN;
 		this.fromCity = fC;
 		this.toCity = tC;
@@ -30,7 +34,7 @@ public class Flight{
 		this.price = p;
 	}
 
-	public void DisplayFlightInformation(){
+	public void DisplayInformation(){
 		System.out.print("Flight number : " + this.flightNumber + ", ");
 		System.out.print("From city : " + this.fromCity + ", ");
 		System.out.print("To city : " + this.toCity + ", ");

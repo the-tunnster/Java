@@ -1,6 +1,6 @@
 package CSVReader;
 
-public class User {
+public class User extends CSVRecord{
 	
 	private String firstName;
 	private String lastName;
@@ -8,7 +8,10 @@ public class User {
 	private String phoneNumber;
 	private String city;
 
+	private int numberOfFields = 5;
+
 	public User(){
+		super();
 		this.firstName = "Default";
 		this.lastName = "Default";
 		this.emailID = "default@email.com";
@@ -17,6 +20,7 @@ public class User {
 	}
 
 	public User(String fN, String lN, String eID, String pN, String c){
+		super(5);
 		this.firstName = fN;
 		this.lastName = lN;
 		this.emailID = eID;
@@ -24,7 +28,7 @@ public class User {
 		this.city = c;
 	}
 
-	public void DisplayUserInformation(){
+	public void DisplayInformation(){
 		System.out.print("First name : " + this.firstName+ ", ");
 		System.out.print("Last name : " + this.lastName + ", ");
 		System.out.print("Email ID : " + this.emailID + ", ");

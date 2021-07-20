@@ -77,7 +77,7 @@ public class flightMain{
 
 	public static void flightRecordDisplayer(){
 		for( Flight f : FlightRecords){
-			f.DisplayFlightInformation();
+			f.DisplayInformation();
 		}
 	}
 }

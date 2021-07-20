@@ -73,7 +73,7 @@ public class userMain{
 
 	public static void userRecordDisplayer(){
 		for( User f : UserRecords){
-			f.DisplayUserInformation();
+			f.DisplayInformation();
 		}
 	}
 
